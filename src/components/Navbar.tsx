@@ -26,7 +26,6 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Navigation Section */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="flex items-center">
             <NavigationMenuItem>
@@ -75,7 +74,6 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Mobile Menu Button */}
         <button 
           className="md:hidden p-2"
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -84,7 +82,6 @@ export default function Navbar() {
         </button>
       </div>
   
-      {/* Mobile Dropdown Menu */}
       {isDropdownOpen && (
         <div className="md:hidden absolute w-full bg-white shadow-lg z-50 border-t">
           <nav className="p-4">
