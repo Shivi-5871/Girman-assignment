@@ -30,7 +30,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
       <Card className="w-full rounded-xl shadow-md p-4 border-white">
         <CardHeader className="flex flex-col space-y-3 items-center md:items-start">
           <img
-            src={user.image || "/placeholder-user.jpg"}
+            src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png"
             alt="User"
             className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border"
           />
@@ -43,7 +43,7 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
           </CardDescription>
         </CardHeader>
 
-        <CardContent className="px-4">
+        <CardContent className="px-4 border-t">
           <div className="flex flex-col md:flex-row md:items-center justify-between pt-3">
             <div className="flex items-center space-x-2 mb-3 md:mb-0 justify-center md:justify-start">
               <Phone className="w-4 h-4 text-gray-700" />
