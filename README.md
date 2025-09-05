@@ -1,12 +1,111 @@
-# React + Vite
+# Girman Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive employee search application built with **React, TailwindCSS, shadcn/ui**, and deployed on **Netlify**.  
+The app allows users to search employees, view details in cards, and fetch more details using dialogs.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search functionality** – Easily find employees.  
+- 📱 **Responsive design** – Mobile-friendly navigation and layouts.  
+- 🧩 **Reusable components** – Built with shadcn/ui and TailwindCSS.  
+- 🖼 **User cards** – Display employee info with profile images.  
+- 🗂 **Dialog modal** – View detailed employee information.  
+- 🌐 **Deployed on Netlify** – Live and accessible online.  
+- 📦 **Code hosted on GitHub**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React 19**
+- **React Router DOM**
+- **TailwindCSS 4**
+- **shadcn/ui** (Radix-based UI components)
+- **Lucide React** (icons)
+- **Vite** (build tool)
+- **Netlify** (deployment)
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home Screenshot](./screenshots/home.png)
+
+### User Card
+![User Card Screenshot](./screenshots/user-card.png)
+
+### User Dialog
+![User Dialog Screenshot](./screenshots/user-dialog.png)
+
+> ℹ️ Place your screenshots in a `screenshots` folder inside the project.
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/girman-search-app.git
+   cd girman-search-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+5. Preview production build:
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 🌍 Deployment
+
+This project is deployed on **Netlify**.  
+You can try it live here: [Your Netlify App Link](https://your-app-link.netlify.app)
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ │    ├── Navbar.tsx
+ │    ├── UserCard.tsx
+ │    ├── UserDialog.tsx
+ │    └── ui/ (shadcn components)
+ ├── pages/
+ │    ├── Home.jsx
+ │    └── SearchResults.tsx
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
