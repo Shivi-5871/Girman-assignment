@@ -42,40 +42,37 @@ const SearchResults = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-100">
       <Navbar />
 
-      <div className="flex flex-col items-center py-6">
-        {/* Search Form */}
-        <form onSubmit={handleSearch} className="w-[790px] mb-10">
+      <div className="flex flex-col items-center py-6 px-4">
+      
+        <form onSubmit={handleSearch} className="w-full max-w-[790px] mb-6 md:mb-10">
           <div className="relative w-full">
-            {/* Search icon inside the input */}
             <Search
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-              size={20}
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+            size={20}
             />
             <Input
-              type="text"
-              placeholder="Search"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="h-[50px] text-lg pl-10 w-full bg-white"
-            />
+            type="text"
+            placeholder="Search"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="h-[50px] text-lg pl-10 w-full bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"/>
           </div>
         </form>
 
-        {/* Results */}
         {searchResults.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-20">
+          <div className="flex flex-col items-center justify-center py-10 md:py-20">
             <img
               src="/no_result.png"
               alt="No results"
-              className="h-48 mb-6"
+              className="h-32 md:h-48 mb-4 md:mb-6"
             />
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-center text-base md:text-lg">
               No results found. Try another search.
             </p>
           </div>
         ) : (
-          <div className="flex justify-center px-2">
-            <div className="grid grid-cols-1 md:[grid-template-columns:repeat(2,24rem)] gap-[22px]">
+          <div className="flex justify-center w-full px-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full max-w-[790px]">
               {searchResults.map((user) => (
                 <UserCard
                   key={`${user.first_name}-${user.last_name}-${user.contact_number}`}
