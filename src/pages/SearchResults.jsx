@@ -65,7 +65,7 @@ const SearchResults = () => {
         {searchResults.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20">
             <img
-              src="/empty-state.png"
+              src="/no_result.png"
               alt="No results"
               className="h-48 mb-6"
             />
