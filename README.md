@@ -35,12 +35,29 @@ The app allows users to search employees, view details in cards, and fetch more 
 ![Home Screenshot](./screenshots/home.png)
 
 ### User Card
-![User Card Screenshot](./screenshots/user-card.png)
+![User Card Screenshot](./screenshots/search.png)
 
 ### User Dialog
-![User Dialog Screenshot](./screenshots/user-dialog.png)
+![User Dialog Screenshot](./screenshots/dialog.png)
 
-> ℹ️ Place your screenshots in a `screenshots` folder inside the project.
+### No Result Page
+![Home Screenshot](./screenshots/no_result.png)
+
+### Phone view home page
+![User Card Screenshot](./screenshots/mobile_home.png)
+
+### Phone view nav bar
+![User Dialog Screenshot](./screenshots/mobile_nav.png)
+
+### Phone view user card
+![Home Screenshot](./screenshots/mobile_userCard.png)
+
+### Phone view dialog box
+![User Card Screenshot](./screenshots/mobile_dialog.png)
+
+### Phone view no result page
+![User Dialog Screenshot](./screenshots/mobile_noResult.png)
+
 
 ---
 
@@ -77,7 +94,7 @@ The app allows users to search employees, view details in cards, and fetch more 
 ## 🌍 Deployment
 
 This project is deployed on **Netlify**.  
-You can try it live here: [Your Netlify App Link](https://your-app-link.netlify.app)
+You can try it live here: [Netlify App Link](https://magenta-croissant-e481c5.netlify.app/)
 
 ---
 
