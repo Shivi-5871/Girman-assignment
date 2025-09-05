@@ -11,7 +11,6 @@ import { MapPin, Phone } from "lucide-react"
 import { Button } from "./ui/button"
 import UserDialog from "./UserDialog"
 
-// ✅ Define the type for the user prop
 type User = {
   first_name: string
   last_name: string
@@ -30,7 +29,6 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
     <>
       <Card className="w-full max-w-sm rounded-xl shadow-md p-4 border-white">
-        {/* Avatar + Name + City */}
         <CardHeader className="flex flex-col space-y-3">
           <img
             src={user.image || "/placeholder-user.jpg"}
