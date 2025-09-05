@@ -49,7 +49,7 @@ export default function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link
-              to="/linkedin"
+              to="https://www.linkedin.com/company/girmantech/"
               className="px-6 text-black hover:underline hover:text-blue-600 text-[24px]"
             >
               LINKEDIN
