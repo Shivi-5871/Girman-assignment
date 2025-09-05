@@ -83,16 +83,16 @@ export default function Navbar() {
           {isDropdownOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
       </div>
-
+  
       {/* Mobile Dropdown Menu */}
       {isDropdownOpen && (
         <div className="md:hidden absolute w-full bg-white shadow-lg z-50 border-t">
           <nav className="p-4">
-            <ul className="space-y-3">
+            <ul className="space-y-2">
               <li>
                 <Link
                   to="/"
-                  className="block py-3 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-lg rounded-md"
+                  className="block py-2 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-xs rounded-md"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   SEARCH
@@ -101,7 +101,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to="https://www.girmantech.com/"
-                  className="block py-3 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-lg rounded-md"
+                  className="block py-2 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-xs rounded-md"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   WEBSITE
@@ -110,7 +110,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to="https://www.linkedin.com/company/girmantech/"
-                  className="block py-3 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-lg rounded-md"
+                  className="block py-2 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-xs rounded-md"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   LINKEDIN
@@ -119,7 +119,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="mailto:contact@girmantech.com"
-                  className="block py-3 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-lg rounded-md"
+                  className="block py-2 px-4 text-black hover:bg-blue-50 hover:text-blue-600 text-xs rounded-md"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   CONTACT
