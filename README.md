@@ -1,6 +1,6 @@
 # Girman Search App
 
-A responsive employee search application built with **React, TailwindCSS, shadcn/ui**, and deployed on **Netlify**.  
+A responsive employee search application built with **React, TailwindCSS, Shadcn/ui**, and deployed on **Netlify**.  
 The app allows users to search employees, view details in cards, and fetch more details using dialogs.
 
 ---
@@ -19,7 +19,7 @@ The app allows users to search employees, view details in cards, and fetch more 
 
 ## 🛠️ Tech Stack
 
-- **React 19**
+- **React JS**
 - **React Router DOM**
 - **TailwindCSS 4**
 - **shadcn/ui** (Radix-based UI components)
