@@ -32,6 +32,7 @@ const Home = () => {
           alt="Girman Logo"
           className="absolute left-6 top-4 object-contain"
           style={{
+            width: "calc(100% - 48px)",
             height: 160, 
           }}
         />
