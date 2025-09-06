@@ -1,3 +1,5 @@
+Please refer to the master branch as the final branch
+
 # Girman Search App
 
 A responsive employee search application built with **React, TailwindCSS, Shadcn/ui**, and deployed on **Vercel**.  
