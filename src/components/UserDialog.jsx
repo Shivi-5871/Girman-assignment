@@ -11,8 +11,7 @@ import { Button } from "./ui/button"
 const UserDialog = ({ user, open, onOpenChange }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-  <DialogContent className="w-full max-w-[512px] h-[475px] bg-white flex flex-col overflow-hidden p-0">
-    {/* Header section with minimal padding */}
+    <DialogContent className="w-full max-w-[512px] h-[475px] bg-white flex flex-col overflow-hidden p-0">
     <div className="px-4 sm:px-6 pt-4 sm:pt-6 pb-2">
       <DialogHeader className="space-y-0">
         <DialogTitle className="text-lg sm:text-xl font-semibold">Employee Details</DialogTitle>
