@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/Navbar.jsx"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 
@@ -20,31 +20,45 @@ const Home = () => {
       <Navbar />
 
       <div className="flex flex-col items-center justify-center px-4 py-8 md:py-12 lg:py-16 xl:py-24">
-        <div className="hidden md:block w-full max-w-2xl mb-8 md:mb-12 lg:mb-16">          
+        {/* <div className="hidden md:block w-full max-w-2xl mb-8 md:mb-12 lg:mb-16">          
           <img
-            src="/logo.png"
+            src="/girman_search_logo.svg"
             alt="Girman Logo"
             className="w-full h-auto object-contain mx-auto"
             style={{maxHeight: "160px" }}
           />
-        </div>
+        </div> */}
 
-        <div className="w-full max-w-2xl">
-          <form onSubmit={handleSearch} className="w-full">
-            <div className="relative">
-              <div className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-                <Search className="h-5 w-5" />
-              </div>
-              <Input
-                type="text"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Search"
-                className="w-full pr-4 pl-12 h-12 md:h-14 text-base md:text-lg rounded-lg border-gray-200 bg-white shadow-sm focus:border-blue-400 focus:ring-blue-400"
-              />
-            </div>
-          </form>
-        </div>
+        <div className="hidden md:block mb-8 md:mb-12 lg:mb-16">
+  <img
+    src="/girman_search_logo.svg"
+    alt="Girman Logo"
+    className="mx-auto object-contain"
+    style={{ width: "800px", height: "125px" }}
+  />
+</div>
+
+
+<div>
+  <form onSubmit={handleSearch} className="w-[800px]">
+    <div className="relative">
+      {/* Search Icon */}
+      <div className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+        <Search className="h-5 w-5" />
+      </div>
+
+      {/* Search Input */}
+      <Input
+        type="text"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        placeholder="Search"
+        className="w-full pl-12 h-[50px] text-[18px] rounded-md border-gray-300 bg-white shadow-sm focus:border-blue-400 focus:ring-blue-400"
+      />
+    </div>
+  </form>
+</div>
+
       </div>
     </div>
   )
