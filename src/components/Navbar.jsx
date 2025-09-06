@@ -55,7 +55,6 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Mobile Hamburger */}
         <button className="md:hidden p-2" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
           {isDropdownOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
