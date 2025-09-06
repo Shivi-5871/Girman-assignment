@@ -1,6 +1,6 @@
 # Girman Search App
 
-A responsive employee search application built with **React, TailwindCSS, Shadcn/ui**, and deployed on **Netlify**.  
+A responsive employee search application built with **React, TailwindCSS, Shadcn/ui**, and deployed on **Vercel**.  
 The app allows users to search employees, view details in cards, and fetch more details using dialogs.
 
 ---
@@ -12,7 +12,7 @@ The app allows users to search employees, view details in cards, and fetch more 
 - 🧩 **Reusable components** – Built with shadcn/ui and TailwindCSS.  
 - 🖼 **User cards** – Display employee info with profile images.  
 - 🗂 **Dialog modal** – View detailed employee information.  
-- 🌐 **Deployed on Netlify** – Live and accessible online.  
+- 🌐 **Deployed on Vercel** – Live and accessible online.  
 - 📦 **Code hosted on GitHub**.
 
 ---
@@ -25,9 +25,17 @@ The app allows users to search employees, view details in cards, and fetch more 
 - **shadcn/ui** (Radix-based UI components)
 - **Lucide React** (icons)
 - **Vite** (build tool)
-- **Netlify** (deployment)
+- **Vercel** (deployment)
 
 ---
+
+
+## 🌍 Deployment
+
+This project is deployed on **Vercel**.  
+You can try it live here: [Vercel App Link](girman-assignment-pink.vercel.app)
+
+
 
 ## 📸 Screenshots
 
@@ -79,22 +87,8 @@ The app allows users to search employees, view details in cards, and fetch more 
    npm run dev
    ```
 
-4. Build for production:
-   ```bash
-   npm run build
-   ```
-
-5. Preview production build:
-   ```bash
-   npm run preview
-   ```
-
 ---
 
-## 🌍 Deployment
-
-This project is deployed on **Netlify**.  
-You can try it live here: [Netlify App Link](https://magenta-croissant-e481c5.netlify.app/)
 
 ---
 
@@ -103,13 +97,13 @@ You can try it live here: [Netlify App Link](https://magenta-croissant-e481c5.ne
 ```
 src/
  ├── components/
- │    ├── Navbar.tsx
- │    ├── UserCard.tsx
- │    ├── UserDialog.tsx
+ │    ├── Navbar.jsx
+ │    ├── UserCard.jsx
+ │    ├── UserDialog.jsx
  │    └── ui/ (shadcn components)
  ├── pages/
  │    ├── Home.jsx
- │    └── SearchResults.tsx
+ │    └── SearchResults.jsx
  ├── App.jsx
  └── main.jsx
 ```
